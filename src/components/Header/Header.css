@@ -1,0 +1,83 @@
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    line-height: normal;
+}
+
+.header__text_theme_light {
+    color: #000;
+}
+
+.header__text_theme_dark {
+    color: #fff;
+}
+
+.checkbox {
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox__span {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in .5s;
+}
+
+.checkbox:checked ~ .checkbox__span {
+    background-color: #442A9B;
+    /* box-shadow: 0 0 0 1200px #151122; */
+    z-index: 0;
+}
+
+.checkbox__span:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url(../../images/sun.png) no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.checkbox:checked ~ .checkbox__span:before {
+    transform: translateX(-50px);
+}
+
+.checkbox__span:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url('../../images/moon3.png') no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: .5s;
+    transform: translateX(50px);
+}
+
+.checkbox:checked ~ .checkbox__span:after {
+    transform: translateX(0);
+}

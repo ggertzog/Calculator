@@ -1,0 +1,25 @@
+.display {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: right;
+}
+
+.display_type_light {
+    transition: ease-in .3s;
+    color: #000;
+}
+
+.display_type_dark {
+    transition: ease-in .3s;
+    color: #fff;
+}
+
+.display__number {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+}

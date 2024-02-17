@@ -1,0 +1,10 @@
+.number-button {
+    margin: 0;
+    padding: 0;
+    color: wheat;
+    background-color: rgb(45, 29, 29);
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
